@@ -1,0 +1,321 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: transparent;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+}
+
+.cenChatRow {
+  margin: 0;
+}
+
+.cenAvatarChat {
+  width: 100%;
+  padding: 0;
+}
+
+.cenAvatar {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+.cenCanvas {
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
+  display: block;
+  float: none; 
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  /* width: 50%; */
+  min-height: 100px;
+}
+
+.cenChatBox {
+  padding: 0;
+  /* width: 100%; */
+}
+/* .kdZMGe */
+.cenChat {
+  background: #f5f8fb;
+  border-radius: 0px;
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.15);
+  font-family: monospace;
+  overflow: hidden;
+  position: relative;
+  bottom: initial;
+  padding: 0;
+  right: initial;
+  width: 100%;
+  z-index: 999;
+  -webkit-transition: -webkit-transform .3s ease;
+  -webkit-transition: transform .3s ease;
+  transition: transform .3s ease;
+}
+
+/* glfuN */
+.cenChatHeader {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #6e48aa;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  fill: #fff;
+  height: 56px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* dYUxQs */
+.cenChatH2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* bxslzG */
+.cenChatBody {
+  height: 500px;
+  overflow-y: scroll;
+  margin-top: 2px;
+  padding-top: 6px;
+}
+
+/* efROPc */
+.chatbotBotRow {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+/* .vmYlS */
+.chatbotBotAvatarBox {
+  display: inline-block;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  padding: 6px;
+}
+
+/* fhAWVE */
+.chatbotBotText {
+  -webkit-animation: Lmuha .3s ease forwards;
+  animation: Lmuha .3s ease forwards;
+  background: #6E48AA;
+  border-radius: 18px 18px 18px 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  max-width: 65%;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  position: relative;
+  padding: 12px;
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+.cenbotManRow {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.cenbotManImgBox {
+  display: inline-block;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 6px;
+}
+
+.chatbotManText {
+  -webkit-animation: Lmuha .3s ease forwards;
+  animation: Lmuha .3s ease forwards;
+  background: #fff;
+  border-radius: 18px 18px 0 18px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+  color: #4a4a4a;
+  display: inline-block;
+  font-size: 14px;
+  max-width: 65%;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  position: relative;
+  padding: 12px;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+
+/* byHcWR */
+.cenChatFooter {
+  position: relative;
+}
+
+/* kCSgO */
+.cenChatFooterText {
+  border: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid #eee;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  opacity: .5;
+  outline: none;
+  padding: 16px 52px 16px 10px;
+  width: 100%;
+  /* -webkit-appearance: none; */
+}
+
+/* kZiwDc */
+.cenChatFooterButton {
+  background-color: transparent;
+  border: 0;
+  border-bottom-right-radius: 10px;
+  box-shadow: none;
+  cursor: default;
+  fill: #4a4a4a;
+  opacity: .5;
+  outline: none;
+  padding: 14px 16px 12px 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+/* fRGzTx */
+.cenbotManImg {
+  -webkit-animation: Lmuha .3s ease forwards;
+  animation: Lmuha .3s ease forwards;
+  border-radius: 50% 50% 50% 0;
+  box-shadow: rgba(0,0,0,0.15) 0 1px 2px 0;
+  height: 40px;
+  min-width: 40px;
+  padding: 3px;
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  width: 40;
+}
+
+
+.darkButton {
+  opacity: 1;
+}
+.lightButton {
+  opacity: 0.5;
+}
+
+.purpleButton {
+  fill: #6e48aa;
+}
+
+
+/* hLGSaN */
+.chatbotBotAvatarImg {
+  -webkit-animation: Lmuha .3s ease forwards;
+  animation: Lmuha .3s ease forwards;
+  border-radius: 50% 50% 0 50%;
+  box-shadow: rgba(0,0,0,0.15) 0 1px 2px 0;
+  height: 40px;
+  min-width: 40px;
+  padding: 3px;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  width: 40;
+}
